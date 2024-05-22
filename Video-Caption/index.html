@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Video Captioning - Web App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preload" href="assets/background.mov" as="video">
+
+</head>
+
+<body>
+    <video id="background-video" autoplay loop muted>
+        <source src="assets/background.mov" type="video/mp4">
+    </video>
+
+    <div id="navbar">
+        <div id="q">
+            <a href="">Home</a>
+        </div>
+        <div>
+            <a href="">Video Captioning App</a>
+        </div>
+        <div>
+            <a href="">About</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="video-container">
+        <br>
+        <br>
+        <br>
+        <input type="text" id="video-url" placeholder="Enter video URL">
+        <button onclick="loadVideo()">Load Video</button>
+        <br>
+        <br>
+        <div id="player"></div><br>
+        <div id="caption-input-container">
+            <textarea id="caption-input" placeholder="Enter caption"></textarea>
+            <br>
+            <input type="text" id="timestamp-input" placeholder="Enter timestamp (in seconds)">
+            <br>
+            <br>
+            <button id="add-caption-button" onclick="addCaption()">Add Caption</button>
+            <button onclick="toggleVideo()">Pause/Play</button>
+        </div>
+        <ul id="caption-list"></ul>
+    </div>
+    <div id="footer">
+        &copy; 2024 Pushkar Garg. All Rights Reserved.
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+
+</html>
