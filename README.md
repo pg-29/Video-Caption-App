@@ -8,7 +8,7 @@ CSS3<br>
 JavaScript (ES6+)
 
 ## Explore
-<a href="https://videocaption-app.netlify.app"><strong>➥ Live Demo</strong></a>
+<a href="https://caption-app.netlify.app"><strong>➥ Live Demo</strong></a>
 
 ## Demo Screenshots
 <img width="1429" alt="Screenshot 2024-05-22 at 3 36 12 PM" src="https://github.com/pg-29/Video-Caption-App/assets/122177879/fdc7cfb3-5033-47dc-8b56-3c34671ea193">
